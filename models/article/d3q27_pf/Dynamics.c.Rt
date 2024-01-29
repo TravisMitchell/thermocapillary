@@ -374,11 +374,6 @@ CudaDeviceFunction void Init_distributions()
 	vector_t gradPhi = calcGradPhi();
 	magnPhi = sqrt(gradPhi.x*gradPhi.x + gradPhi.y*gradPhi.y + gradPhi.z*gradPhi.z);
 
-	#ifdef OPTIONS_geometric
-		gradPhiVal_x = gradPhi.x;
-		gradPhiVal_y = gradPhi.y;
-		gradPhiVal_z = gradPhi.z;
-	#endif
 	if (magnPhi < minGradient){
 		nx=0.0; ny=0.0; nz=0.0;
 	} else {
