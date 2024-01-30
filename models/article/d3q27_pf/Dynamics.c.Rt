@@ -668,7 +668,7 @@ CudaDeviceFunction void CollisionMRT()
 #endif
 
 //######BOUNDARY CONDITIONS######//
-<?RT models/multiphase/d3q27_pf_velocity/Boundary.c.Rt ?>
+<?RT models/article/d3q27_pf/Boundary.c.Rt ?>
 //############//
 
 //######UPDATE FUNCTIONS#######//
@@ -834,7 +834,7 @@ CudaDeviceFunction void updateTrackers(real_t C){
 //#############//
 //######THERMOCAPILLARY UPDATE######//
 #ifdef OPTIONS_thermo
-	<?RT models/multiphase/d3q27_pf_velocity/thermo.c.Rt ?>
+	<?RT models/article/d3q27_pf/thermo.c.Rt ?>
 #endif
 //#############//
 

@@ -299,7 +299,7 @@ CudaDeviceFunction void calcWallPhase(){
 
 		// This is needed, because otherwise geometric_staircaseimp performance will drop
 		// (presumably because of the dynamic access that it has)
-        <?R phase_field_field_name <- if (Options$geometric) 'gradPhi_PhaseF' else 'PhaseF' ?>
+        <?R phase_field_field_name <- 'PhaseF' ?>
 
         pf_f = <?%s phase_field_field_name ?>_dyn(nw_x, nw_y, nw_z);
 

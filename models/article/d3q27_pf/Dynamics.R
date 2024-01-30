@@ -116,12 +116,6 @@ if (Options$thermo){
 	AddQuantity(name="Pstar", unit="1")
 	AddQuantity(name="Normal", unit=1, vector=T)
     AddQuantity(name="IsItBoundary", unit="1")
-	if (Options$geometric){
-		AddQuantity(name="GradPhi", unit=1, vector=T)
-	}
-	if (Options$staircaseimp) {
-		AddQuantity(name="ActualNormal", unit=1, vector=T)
-	}
 ###################################
 ########INPUTS - PHASEFIELD########
 ###################################
