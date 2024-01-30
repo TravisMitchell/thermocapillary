@@ -2,10 +2,10 @@
 
 This is a template repository for a overlay repository for [TCLB Solver](https://github.com/CFD-GO/TCLB). Kind of a layer you can put on top of the TCLB's repository to allow you to develop and share your models or cases in your own repo, without the "baggage" of the main repo.
 
-This Overlay is specifically for the thermocapillary extension to the three-dimensional phase-field LBM model (d3q27_pf_velocity)[https://github.com/CFD-GO/TCLB/tree/master/models/multiphase/d3q27_pf_velocity].
+This Overlay is specifically for a thermocapillary extension to the three-dimensional phase-field LBM model (TCLB:d3q27_pf_velocity).
 
 ## How to use
-After you create your own repository from this template you can:
+To use this Overlay:
 ```bash
 git clone git@github.com:TravisMitchell/thermocapillary.git
 cd thermocapillary
