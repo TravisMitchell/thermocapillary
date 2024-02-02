@@ -292,7 +292,7 @@ CudaDeviceFunction void specialCases_Init()
 	#ifdef OPTIONS_thermo
 		Temp   = T_init;
 		if (fabs(dT) > 0){
-			Temp = T_init + dT*Y;
+			Temp = dT*Y;
 		}
 		if (fabs(dTx) > 0){
 			Temp = T_init + dTx*X;
